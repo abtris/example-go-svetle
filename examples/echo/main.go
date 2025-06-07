@@ -42,7 +42,7 @@ func main() {
 		}))
 	} else {
 		if !common.IsViteServerRunning() {
-			log.Fatalln("Vite dev server is not running. Please start it with 'pnpm dev'")
+			log.Fatalln("Vite dev server is not running. Please start it with 'npm run dev'")
 		}
 		// Static assets and frontend routes
 		e.Any("/*", staticAssetHandler)
